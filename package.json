@@ -8,7 +8,6 @@
     "cheerio": "0.10.7",
     "hubot-maps": "0.0.2",
     "hubot-shipit": "~0.2.0",
-    "hubot-help": "~0.1.1",
     "hubot-google-images": "~0.1.4",
     "hubot-diagnostics": "0.0.1",
     "hubot-pugme": "~0.1.0",
