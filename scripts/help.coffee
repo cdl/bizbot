@@ -71,11 +71,10 @@ module.exports = (robot) ->
 
     emit = cmds.join "\n"
 
-    username = msg.message.user.name.toLowerCase()
-    user = robot.adapter.client.getDMByName username
+    user = robot.adapter.client.getDMByName msg.message.user.name.toLowerCase()
     user.send emit
 
-    msg.send "Hey #{username}, let me dm that to you :)"
+    msg.reply "sure, let me dm that to you :)"
 
   robot.router.get "/#{robot.name}/help", (req, res) ->
     cmds = robot.helpCommands().map (cmd) ->
